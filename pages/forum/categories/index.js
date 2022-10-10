@@ -1,10 +1,7 @@
-import Navbar from "../components/shared/Navbar";
-
 const ForumCategories = () => {
   return (
     <>
       {/* HERO STARTS */}
-      <Navbar />
       <div className="container">
         <section className="section-title">
           <div className="px-2">

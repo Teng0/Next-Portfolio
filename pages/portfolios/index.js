@@ -1,9 +1,7 @@
-import Navbar from "../components/shared/Navbar";
-
-const Portfolios = () => {
+const Portfolios = (props) => {
   return (
     <>
-      <Navbar />
+      {props.testingData}
       <section className="fj-hero">
         <div className="fj-hero-wrapper row">
           <div className="hero-left col-md-6">
@@ -100,4 +98,7 @@ const Portfolios = () => {
   );
 };
 
+Portfolios.getInitialProps = () => {
+  return { testingData: "Just Same testing things" };
+};
 export default Portfolios;
